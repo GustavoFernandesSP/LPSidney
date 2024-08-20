@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.LinkStyle{
+    text-decoration: none;
+    color: white;
+}
+
+/*//////////////////////////////////////////////         Header Section         ////////////////////////////////////////////////*/
+
+.SectionHeader1 {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    display: inline;
+    z-index: 10; /* Garante que a seção de cabeçalho esteja acima de outros elementos */
+}
+
+.SectionHeader2{
+    display: none;
+}
+
+.UlHeader{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.LinkHeader{
+    color: inherit;
+    text-decoration: none;
+}
+
+.LinkHeader2{
+    color: inherit;
+    text-decoration: none;
+}
+
+.liHeader{
+    list-style: none;
+    margin-top: 5vh;
+    color: #a3a3a3;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+
+
+.liHeader:hover{
+    color: black;
+    background-color: #ffd900d5 ;
+    font-size: 25px;
+    border: 2px solid #babe80;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+.header-videos {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+}
+
+.header-videos video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.v16{
+    display: flex;
+}
+
+.v9{
+    display: none;
+}
+
+.v1{
+    display: none;
+}
+
+.SectionHeader3{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .v16{
+        display: none;
+    }
+
+    .v9{
+        display: none;
+    }
+
+    .v1{
+        display: flex;
+    }
+
+    .SectionHeader1{
+        display: none;
+    }
+
+    .SectionHeader2{
+        position: absolute;
+        display: none;
+        margin: auto;
+        justify-content: center;
+        width: 100%;
+        height: 310px;
+        background-color: rgba(165, 165, 165, 0.89);
+    }
+
+    .UlHeader2{
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        margin-top: 5vh;
+        font-size: 25px;
+        
+    }
+
+    .imagemHamburguer{
+       size: 25px;
+        position: absolute;
+       width: 50px;
+       right: 0px;
+       justify-content: end;
+       margin: 25px;
+       margin-left: 5px;
+    }
+
+    .imgHeadeMobile{
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .liHeader2{
+        width: 100%;
+        padding: auto;
+        margin-bottom: 15px;
+        text-align: center;
+        color: inherit;
+    }
+
+    .SectionHeader3{    
+        display: flex;
+        position: absolute;
+        right: 0%;
+        margin: 25px;
+        cursor: pointer;
+    }
+
+}
+
+/*//////////////////////////////////////////////         Header Section         ////////////////////////////////////////////////*/
+
+
+    .Ouqee{
+        
+        background-color: #a3a3a327;
+        width: 100%;
+        height: 380px;
+    }
+
+    .EscritaSection1{
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        width: 90%;
+        height: 400px;
+    }
+
+    .buttonInscricaoSection1{
+        border: 1px solid #ffd900d5 ;
+        
+        border-radius: 25px;
+        padding: 15px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .buttonInscricaoSection1:hover{
+        background-color: #ffd900d5;
+        border-radius: 25px;
+        padding: 15px;
+        color: #a3a3a3;
+        cursor: pointer;
+    }
+
+/*//////////////////////////////////////////////         Cards Section         ////////////////////////////////////////////////*/
+
+
+
+
+
+
+/*//////////////////////////////////////////////         Galeria Section         ////////////////////////////////////////////////*/
+
+
+
+.box-video{
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    width:630px;
+    height: 355px;
+    margin: auto;
+    align-items: center;
+    border-radius: 25px;
+}
+
+
+.Card-vídeo{
+    padding-top: 40px;
+    width: 100%;
+    height: 450px;
+}
+
+.videoeImagem{
+
+    padding-bottom:10px;
+    background-color: #000;
+
+}
+
+
+.HouverImagens {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 190vh;
+    height: 400px;
+    background: linear-gradient(to right, rgb(0, 0, 0) 10%, transparent 20% 80%, rgb(0, 0, 0) 90%);
+    z-index: 10; /* Ajuste o valor conforme necessário */
+}
+
+
+.HouverVideo{
+margin-bottom: 50px;
+}
+
+.conteudo{
+    width: 90%;
+    margin: auto;
+
+}
+
+.carousel {
+    position: relative;
+    max-width: 170vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    cursor: grab;
+}
+
+.carousel-container:active {
+    cursor: grabbing;
+}
+
+.carousel-container {
+    width: 400rem;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    background-color: rgba(34, 34, 34, 0.808);
+    height: 300px;
+    width: 430px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    margin-top: 165px;
+    z-index: 9999; /* Ajuste o valor conforme necessário */
+}
+
+.prev {
+    left: 25px;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 25px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .HouverImagens{
+        display: none;
+    }
+
+    .box-video{
+        width:330px;
+        height: 300px;
+    }
+
+    .Card-vídeo{
+        padding-top: 40px;
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+/*//////////////////////////////////////////////         Form Section         ////////////////////////////////////////////////*/
+
+.form-container {  
+    padding-top: 35px; 
+   width: 30%;
+   margin: auto;
+   margin-bottom: 40px;
+}
+
+.form-container h1 {
+    width: 32%;
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container h1 span {
+    font-weight: 800;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+
+.form{  
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+
+.form input{  
+  width: 100%;
+  height: 100%;
+  color: #000;
+  border: none;
+    padding-top: 34px;
+    padding-left: 10px;
+}
+
+.form label{
+position: absolute;
+bottom: 0px;
+left: 0%;
+width: 100%;
+height: 100%;
+pointer-events: none;
+border-bottom: 1px solid black;
+}
+
+.from label::after{
+    content:"";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width:100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+}
+
+.Contents-Nome{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .Contents-Nome, .form input:valid + .label-name .Contents-Nome{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5252529f;
+}
+
+
+
+.submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 2spx 2px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.submit-btn img {
+    margin-right: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+/*//////////////////////////////////////////////         Form Section  - Mobile       ////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 600px) {
+  
+
+    .form-container {   
+        width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+     }
+     
+
+     .submit-btn {
+        margin-bottom: 80px;
+        margin-top: 60px;
+    }
+    
+
+    
+  }
+
+
+/*//////////////////////////////////////////////         Footer         ////////////////////////////////////////////////*/
+
+footer{
+    height: 500px;
+    text-decoration: none;
+    color: white;
+    background-color: #282420;
+}
+
+.Div-LogoFooter{
+    text-align: center;
+}
+
+.LogoFooter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+text-align: center;
+}
+
+.ObjectsTextsFooter{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.BoxFooter-Texte{
+    display: flex;
+    display: flex;
+    width: 25%;
+}
+
+.imgVectorConections{
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.ParagrafoTexte{
+    margin-left: 10px;
+    width: 60%;
+}
+
+
+
+.imageRedes{
+    width: 45px;
+    height: 45px;
+}
+
+.imageRedesLK{
+    width: 30px;
+    height: 30px;
+    margin-left: 4px;}
+
+      .ObjectsTextsFooter{
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .BoxFooter{
+        width: 400px;
+        justify-content: center;
+      }
+
+      .BoxFooter-Redes{
+        width: 10%;
+        text-align: center  ;
+      }
+
+      .TextLink{
+        display: flex;
+            margin-left: 40%;
+      }
+
+      @media only screen and (max-width: 600px) {
+
+        .ObjectsTextsFooter{
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            background-color: #282420;
+        }
+        
+        .BoxFooter-Texte{
+            display: flex;
+            display: flex;
+            width: 25%;
+        }
+
+        .BoxFooter{
+            width: 100%;
+            justify-content: center;
+          }
+
+          .TextLink{
+            display: flex;
+                margin-left: 35%;
+          }
+      }
